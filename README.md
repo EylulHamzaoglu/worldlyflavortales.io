@@ -2,21 +2,27 @@
 1. Project Overview: worldlyflavortales.com
 "Worldly Flavor Tales" will serve as a culinary journey, offering users a delightful exploration of globally renowned dishes. Each page will focus on a specific country, presenting its iconic cuisine through engaging content, historical insights, and step-by-step recipes.
 2. Group Members and Assigned Pages:
+
 Eylül:
 Page 1: Index
 Page 2: Turkiye
+
 Arda:
 Page 3: France
 Page 4: Spain
+
 Damla:
 Page 5: Japan
 Page 6: Mexico
+
 Doğa:
 Page 7: Brazil
 Page 8: India
+
 Ayça:
 Page 9: Italy
 Page 10: Contact
+
 3. Page Descriptions:
 Index: An inviting introduction to the website, highlighting the diverse culinary treasures awaiting exploration.
 
