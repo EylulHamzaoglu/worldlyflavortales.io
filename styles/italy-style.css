@@ -1,0 +1,203 @@
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background: linear-gradient(to right, #138808, #fff, #dc0000); 
+    color: #000; 
+}
+nav {
+    background-color: #00aa0e;
+    color: #fb0404;
+    padding: 10px 0;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #f70a0a;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #faf8f8;
+}
+.icon {
+    max-width: 1000px;
+    height: auto;
+    margin-top: 10px;
+}
+footer {
+    background-color: #21ac66;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    border-top-width: 400px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.logo {
+    max-width: 100px; 
+    height: auto;
+    margin-top: -5px;
+}
+.recipe {
+    width: 300px;
+    margin-bottom: 0px;
+    border: 15px solid #9edfac;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #21ac66;
+}
+.recipe img {
+    width: 100%;
+    border-radius: 5px;
+}
+.recipe h2 {
+    font-family:'Georgia', serif;
+    margin-top: 10px;
+    color: #138808;
+}
+.recipe p {
+    margin-bottom: 10px;
+    color: #dc0000;
+    font-family: 'Arial', sans-serif;
+}
+.main-title {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    background-color: #f70a0a; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+    transition: color 0.3s, box-shadow 0.3s;
+}
+.main-title:hover {
+    color: #1fdd06; 
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); 
+}
+
+#pizza {
+margin-left: 50px; 
+} 
+
+#pasta {
+margin-left: 75%;
+margin-top: -385px;
+}
+
+#risotto {
+    margin-left: 50px;
+    margin-top: 100px;
+} 
+#ossobuco {
+    margin-left: 75%;
+    margin-top: -375px;
+}
+.map img{
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 750px;
+    margin-top: 5%;
+    padding-top:5% }
+
+  .map {
+    height: 1px;}
+
+
+.recipe-content {
+    display: none;
+}
+
+.recipe-button {
+    background: linear-gradient(to right, #138808, #fff, #dc0000);
+    color: #177135;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+#commentSection {
+    background: linear-gradient(to right, #138808, #fff, #dc0000);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#commentForm {
+    margin-bottom: 15px;
+}
+
+#commentInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #51ef42;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #106605;
+}
+
+#commentsList {
+    margin-top: 15px;
+}
+
+
+
+#thankYouMessage {
+    color: #df1919;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+}
+
+
+
+
+
+
+
