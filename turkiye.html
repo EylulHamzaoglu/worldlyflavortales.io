@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldly Flavor Tales - Culinary Journey</title>
+    <link rel="icon" href="items/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/turkiye-style.css">
+    <script src="scripts/turkiye-script.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="items/header.png" alt="Worldly Flavor Tales Header" class="header img" > 
+</header>
+
+<nav>
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="turkiye.html">Turkiye</a></li>
+        <li><a href="france.html">France</a></li>
+        <li><a href="italy.html">Italy</a></li>
+        <li><a href="spain.html">Spain</a></li>
+        <li><a href="mexico.html">Mexico</a></li>
+        <li><a href="brazil.html">Brazil</a></li>
+        <li><a href="india.html">India</a></li>
+        <li><a href="japan.html">Japan</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+
+    </ul>
+</nav>
+
+<main>
+    <div class="content">
+    <h1 class="content-title">Turkish cuisine</h1>
+    <p class="content-description">Turkish cuisine is a very diverse and wide cuisine. Let's take a look at a few examples of Turkish cuisine, which is unique in the world and whose culture dates back to very ancient times.</p>
+
+    <section id="columns">
+        <div class="row">
+            <div class="column side">
+                <img src="images/adana1.jpg" alt="Adana Kebap">
+            </div>
+            <div class="column middle">
+                <section id="adana-kebap" class="yemek">
+                    <h2><a href="javascript: showTable('adana');" class="yemek.h">Adana Kebap</a></h2>
+                    <p>Adana Kebap is a traditional kebab variety originating from the Adana province. It is made with seasoned ground beef and is typically served with grilled vegetables.</p>
+                </section>
+            </div>
+            <div class="column side">
+                <img src="images/adana2.jpg" alt="Adana Kebap">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column side">
+                <img src="images/hunkar1.jpg" alt="Hünkar Beğendi">
+            </div>
+            <div class="column middle">
+                <section id="hunkar-begendi" class="yemek">
+                    <h2><a href="javascript: showTable('hunkar-begendi');" class="yemek.h" >Hünkar Beğendi</a></h2>
+                    <p>Hünkar Beğendi is a dish associated with Ottoman cuisine. This meal, containing lamb meat, is served on a bed of roasted eggplant puree.</p>
+                </section>
+            </div>
+            <div class="column side">
+                <img src="images/hunkar1.jpg" alt="Hünkar Beğendi">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column side">
+                <img src="images/kunefe1.jpg" alt="Künefe">
+            </div>
+            <div class="column middle">
+                <br>
+                <section id="kunefe" class="yemek">
+                    <h2><a href="javascript: showTable('kunefe');" class="yemek.h">Künefe</a></h2>
+                    <p>Künefe is a dessert hailing from Gaziantep cuisine. It consists of fine shredded phyllo dough, cheese, and syrup. It is baked and served hot.</p>
+                </section>
+            </div>
+            <div class="column side">
+                <img src="images/kunefe2.jpg" alt="Künefe">
+            </div>
+        </div>
+        <div class="row table-div" id="adana-table">
+            <div class="column middle">
+                
+                <section id="table">
+                    <div id="table"></div>
+                    <table>
+                      <tr>
+                          <th>Meal</th>
+                          <th>Calorie Value</th>
+                          <th>Origin Date</th>
+                          <th>Region</th>
+                      </tr>
+                      <tr>
+                          <td>Adana Kebab</td>
+                          <td>500 kcal</td>
+                          <td>1930s</td>
+                          <td>Adana</td>
+                      </tr>
+                  </table>
+                </section>
+            </div>
+        </div>
+        <div class="row table-div" id="hunkar-begendi-table">
+            <div class="column middle">
+                
+                <section id="table">
+                    <div id="table"></div>
+                    <table>
+                      <tr>
+                          <th>Meal</th>
+                          <th>Calorie Value</th>
+                          <th>Origin Date</th>
+                          <th>Region</th>
+                      </tr>
+                      <tr>
+                          <td>Hünkar Beğendi</td>
+                          <td>600 kcal</td>
+                          <td>18th century</td>
+                          <td>Ottoman Cuisine</td>
+                      </tr>
+                  </table>
+                </section>
+            </div>
+        </div>
+        <div class="row table-div" id="kunefe-table">
+            <div class="column middle">
+                <section id="table">
+                    <div id="table"></div>
+                    <table>
+                      <tr>
+                          <th>Meal</th>
+                          <th>Calorie Value</th>
+                          <th>Origin Date</th>
+                          <th>Region</th>
+                      </tr>
+                      <tr>
+                          <td>Antakya Kunefe</td>
+                          <td>450 kcal</td>
+                          <td>16th century</td>
+                          <td>Antakya</td>
+                      </tr>
+                  </table>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column middle">
+                <h3>Turkiye is a country with a lot of unique tastes. Do you want to know what else is there?</h3>
+                <h3>Stand by for other recipes. Follow us!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column middle">
+                <button class="button" onclick="showRecipe()">Show me the recipe</button>
+            </div>
+            <div class="column middle">
+                  <button class="button" id="recommendationButton" onclick="showRecommendation()">Get Recommendation</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column middle" id="recommendationResult">
+                .
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+<br><br><br><br>
+<br><br><br>
+<footer>
+    <img src="items/logo.png" alt="Worldly Flavor Tales Icon" class="logo">
+    <p>&copy; 2023 Worldly Flavor Tales. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

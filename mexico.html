@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Tanıtımı</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header img {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    margin: left; 
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #99BFCB; 
+    color: #70B463;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 15px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+nav a:hover {
+    color: #ffcc00; 
+}
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    color:white;
+    
+    background: hsla(0, 96%, 50%, 1);
+    background: linear-gradient(90deg, hsla(0, 96%, 50%, 1) 0%, hsla(131, 92%, 53%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(0, 96%, 50%, 1) 0%, hsla(131, 92%, 53%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(0, 96%, 50%, 1) 0%, hsla(131, 92%, 53%, 1) 100%);
+
+      
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    button:hover {
+      background-color: #ffffff;
+    }
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<header>
+  <img src="items/header.png" alt="Worldly Flavor Tales Header">
+</header>
+
+<nav>
+  <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="turkiye.html">Turkiye</a></li>
+      <li><a href="france.html">France</a></li>
+      <li><a href="italy.html">Italy</a></li>
+      <li><a href="spain.html">Spain</a></li>
+      <li><a href="mexico.html">Mexico</a></li>
+      <li><a href="brazil.html">Brazil</a></li>
+      <li><a href="india.html">India</a></li>
+      <li><a href="japan.html">Japan</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+
+  </ul>
+</nav>
+
+
+
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2> Mexican Cuisine</h2>
+    <img src="images/mexian1.jpg" alt="Mexican Cuisine">
+    <p>Mexican cuisine consists of the cooking cuisines and traditions of the modern country of Mexico. Its earliest roots lie in Mesoamerican cuisine. Its ingredients and methods begin with the first agricultural communities such as the Olmec and Maya who domesticated maize, created the standard process of nixtamalization, and established their foodways.Successive waves of other Mesoamerican groups brought with them their cooking methods.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Tacos</h2>
+    <img src="images/tacos.jpg" alt="Tacos">
+    <p>It is one of the symbols of Mexico. Thin breads made from corn or wheat flour are prepared by adding various ingredients. Meat, chicken, fish, vegetables and sauces are often among the ingredients.
+    </p>
+    <button onclick="openModal('Tacos')">Recipe</button>
+  </div>
+
+  <div class="card">
+    <h2>Conchas</h2>
+    <img src="images/conchas.jpeg" alt="Conchas">
+    <p>Conchas are a Mexican bread, a sweet bread (Pan Dulce) that are served at panaderías. This concha bread is a soft, enriched dough that has a lovely buttery and sweet flavor.</p>
+    <button onclick="openModal('Conchas')">Recipe</button>
+  </div>
+
+  
+
+  
+</div>
+
+
+<div id="Tacos" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('Tacos')">&times;</span>
+    <p>500 grams of chicken breast (diced)</p>
+    <p>2 tablespoons of vegetable oil</p>
+    <p>1 teaspoon of chili powder</p>
+    <p>1 teaspoon of cumin</p>
+    <p>1 teaspoon of sweet paprika</p>
+    <p>1/2 teaspoon of garlic powder</p>
+    <p>Salt and pepper (optional)</p>
+    <p>Taco shells</p>
+    <p>Toppings: shredded lettuce, grated cheese, diced tomatoes, salsa, guacamole, lime wedges</p>
+    <p>Instructions:</p>
+    <p>In a pan, sauté the diced chicken in vegetable oil until browned.</p>
+    <p>Add the spices (chili powder, cumin, sweet paprika, garlic powder) to the chicken. Add salt and pepper to taste. Stir the chicken in the spice mixture until well-coated.</p>
+    <p>Heat the taco shells according to the package instructions.</p>
+    <p>Distribute the chicken evenly among the warmed taco shells.</p>
+    <p>Top with shredded lettuce, grated cheese, diced tomatoes, salsa, guacamole, and lime wedges.</p>
+    <p>Fold the tacos and serve.</p>
+  </div>
+</div>
+
+<div id="Conchas" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('Conchas')">&times;</span>
+      <p>500 grams (3-¾ cups) All-Purpose Flour plus extra for dusting </p>
+      <p>125 grams (½ cup + 2 tablespoon) Sugar </p>
+      <p>7.5 grams (2- ½ teaspoon) Rapid Rise (or Quick Rising) Instant Yeast </p>
+      <p>3 grams (½ teaspoon) Salt </p>
+      <p>100 grams (½ cup) Non-Salted Butter at room temperature </p>
+      <p>100 ml eggs  </p>
+      <p>5 ml (1 teaspoon) Vanilla extract </p>
+      <p>120 ml (½ cup) of Milk warm </p>
+      <p>100 grams (½ cup plus 1 teaspoon) Vegetable Shortening plus extra to grease the dough and baking sheets</p>
+      <p>100 grams (⅞ of a cup) Confectioner Sugar</p>
+      <p>120 grams (1 cup) All-Purpose Flour</p>
+      <p>5 grams (2-½ teaspoo) Cocoa powder for half of the topping, if desired</p>
+      <p>5 grams (1 teaspoon) Cinnamon optional for the white topping</p>
+
+      <p>Instructions: </p>
+        
+      <p>Have each ingredient ready and measured (by weight) before starting, and thoroughly read the notes above. Mix the all-purpose flour, yeast, sugar, and salt in the bowl of a stand mixer at medium speed, just to mix it well. </p>
+      <p>Add the butter and mix well (using the stand mixer with the hook attachment), then mix in the eggs and vanilla extract and slowly pour the milk in little by little until the dough looks cohesive (you may need less or more milk, as some flours soak up more liquid than others). Keep beating the mixture for about 7 minutes at medium speed. Add a little more flour around the inside of the bowl (2-3 tablespoons), just enough for the dough to separate from the container. The dough should be soft and slightly sticky. </p>
+      <p>YOUR DOUGH SHOULD FEEL VERY SOFT AND ELASTIC. </p>
+      <p>Place the dough on your floured working table and knead it just enough to shape it into a ball. </p>
+      <p>Place this ball in a large greased bowl to rest. Cover it with plastic wrap (or wax paper) and a kitchen napkin. Let the dough rest in a warm place for about 2 hours until it doubles in size. I usually turn the light on in my oven and place the bowl inside, close to the light. Be aware that if your kitchen is cold, the dough will take longer to rise. Be patient and do not try to proceed to the next step until the mixture has doubled in size. </p>
+    </div>
+  </div>
+
+<script>
+  function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+  }
+
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

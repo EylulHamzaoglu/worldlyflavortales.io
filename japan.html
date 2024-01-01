@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Tanıtımı</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header img {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    margin: left; 
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #99BFCB; 
+    color: #70B463;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 15px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+nav a:hover {
+    color: #ffcc00; 
+}
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    color:white;
+    
+    background: hsla(0, 96%, 50%, 1);
+
+
+      
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    button:hover {
+      background-color: #ffffff;
+    }
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin:  auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .cardimg{
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+
+
+<header>
+  <img src="items/header.png" alt="Worldly Flavor Tales Header">
+</header>
+
+<nav>
+  <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="turkiye.html">Turkiye</a></li>
+      <li><a href="france.html">France</a></li>
+      <li><a href="italy.html">Italy</a></li>
+      <li><a href="spain.html">Spain</a></li>
+      <li><a href="mexico.html">Mexico</a></li>
+      <li><a href="brazil.html">Brazil</a></li>
+      <li><a href="india.html">India</a></li>
+      <li><a href="japan.html">Japan</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+
+  </ul>
+</nav>
+
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>About Japanese Cuisine    </h2>
+    <img src="images/main.jpg" alt="Mexican Cuisine">
+    <p>Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through centuries of political, economic, and social changes. The traditional cuisine of Japan (Japanese: washoku) is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled, but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light batter, as tempura.</p>
+  </div>
+
+  <div class="card">
+    <h2>Sushi</h2>
+    <img src="images/sushi.jpg" class="cardimg" alt="Sushi">
+    <p>Sushi is a type of food unique to Japan and popular around the world. Basically, sushi is a dish of fish, seafood, vegetables or other ingredients combined with specially prepared rice flavored with vinegar and sugar.    </p>
+    <button onclick="openModal('Sushi')">Recipe</button>
+  </div>
+
+  <div class="card">
+    <h2>Ramen</h2>
+    <img src="images/ramen.jpg" alt="Ramen">
+    <p>Ramen is a type of noodle dish that is a soup dish native to Japan and has gained popularity around the world.</p>
+    <button onclick="openModal('Ramen')">Recipe</button>
+  </div>
+
+  
+  
+</div>
+
+
+
+<div id="Sushi" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('Sushi')">&times;</span>
+    <p>2 cups sushi rice</p>
+    <p>2.5 cups water</p>
+    <p>1/2 cup sushi vinegar</p>
+    <p>2 tablespoons sugar</p>
+    <p>1 teaspoon salt</p>
+    <p>Nori seaweed sheets</p>
+    <p>Fresh fish (such as salmon or tuna)</p>
+    <p>Vegetables (e.g., cucumber, carrot)</p>
+    Soy sauce</p>
+    Wasabi and pickled ginger (optional)</p>
+    Sushi rolling mat (makisu)</p>
+    Instructions:</p>
+    Prepare the Rice: Rinse the sushi rice thoroughly until the water runs clear. Cook the rice with water in a pot. Once cooked, let the rice rest a bit, then mix in the sushi vinegar, sugar, and salt.</p>
+    Prepare Vegetables and Fish:</p>
+    Cut vegetables and fish into thin strips.</p>
+    Prepare Nori Sheets:</p>
+    Lay the nori seaweed sheets on a flat surface.</p>
+    Wet your hands and spread the rice evenly over the nori, leaving a small border at the bottom.</p>
+    Starting from the bottom of the nori, place vegetables and fish.</p>
+    Rolling the Sushi: Use the sushi rolling mat to roll the sushi into a cylindrical shape.</p>
+    Once rolled, use a sharp knife to slice the sushi roll into bite-sized pieces.</p>
+    Serve: Place the sliced sushi on a serving plate.</p>
+    Provide a small bowl for dipping into soy sauce.</p>
+    Optional: Include wasabi, pickled ginger, and soy sauce on the side.</p>
+
+  </div>
+</div>
+
+<div id="Ramen" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('Ramen')">&times;</span>
+    For Broth:</p>
+    4 cups chicken or vegetable broth</p>
+    2 cloves garlic, minced</p>
+    1 tablespoon fresh ginger, grated</p>
+    2 tablespoons soy sauce</p>
+    1 tablespoon mirin (sweet rice wine)</p>
+    1 tablespoon sake (optional)</p>
+    1 teaspoon sesame oil</p>
+    For Ramen Bowl:</p>
+    200g ramen noodles</p>
+    Sliced cooked chicken, pork, or tofu (as desired)</p>
+    Sliced green onions</p>
+    Sliced mushrooms (shiitake or enoki work well)</p>
+    Spinach or book choy leaves</p>
+    Soft-boiled eggs, halved</p>
+    Nori seaweed sheets, shredded</p>
+    Sesame seeds for garnish</p>
+
+    Instructions:</p>
+    Prepare Broth: In a pot, combine chicken or vegetable broth, minced garlic, grated ginger, soy sauce, mirin, sake (if using), and sesame oil.</p>
+    Bring the broth to a simmer and let it cook for about 15-20 minutes to allow the flavors to meld. </p>
+
+
+  </div>
+</div>
+
+
+
+  </div>
+
+<script>
+  function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+  }
+
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

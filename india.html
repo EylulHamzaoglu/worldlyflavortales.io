@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hint Yemekleri</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(240,60,0);
+            background: linear-gradient(90deg, rgba(240,60,0,1) 0%, rgba(240,108,0,1) 50%, rgba(240,60,0,1) 100%);
+        }
+        header img {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    margin: left; 
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #99BFCB; 
+    color: #70B463;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 15px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+nav a:hover {
+    color: #ffcc00; 
+}
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px; 
+            padding: 40px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 16px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            padding: 30px; 
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 12px; 
+            margin-bottom: 20px; 
+        }
+        
+        h2 {
+            margin-bottom: 15px;
+            font-size: 24px; 
+        }
+        
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #FFA500; 
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+        
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<header>
+    <img src="items/header.png" alt="Worldly Flavor Tales Header">
+</header>
+
+<nav>
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="turkiye.html">Turkiye</a></li>
+        <li><a href="france.html">France</a></li>
+        <li><a href="italy.html">Italy</a></li>
+        <li><a href="spain.html">Spain</a></li>
+        <li><a href="mexico.html">Mexico</a></li>
+        <li><a href="brazil.html">Brazil</a></li>
+        <li><a href="india.html">India</a></li>
+        <li><a href="japan.html">Japan</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+
+    </ul>
+</nav>
+
+
+<body>
+
+<div class="container">
+<div class="row">
+    <div class="card">
+        <img src="images/cuisine.jpg" alt="Yemek 1">
+        <h2>About Indian Cuisine</h2>
+        <p>Indian cuisine is a cuisine that generally consists of spicy dishes. All dishes, from
+            dessert to chicken, are spicy. Desserts are heavy on cinnamon and chicken is heavy on curry.
+            Due to the Hindu religion, much beef is not used. Chicken meat is predominant. Actually, there
+            is no spice called curry. &quot;Curries&quot; vary depending on the dish.</p>
+       
+       
+    </div>
+    <br>
+    <div class="card">
+        <img src="images/tandoori.webp" alt="Yemek 2">
+        <h2>About Tandoori Chicken</h2>
+        <p>Tandoori Chicken is primarily prepared with a marinade made with spices such as yoghurt,
+            lemon juice, ginger, garlic, coriander and turmeric. Chicken pieces are coated with this mixture
+            and left to rest in the refrigerator, usually for a long time. It is then cooked in traditional
+            tandoor ovens or modern ovens or grills.
+            During the cooking process, the chicken pieces take on a fried texture at the high temperature
+            of the tandoor while the inside remains soft and delicious. When served, it is often garnished
+            with lemon slices and fresh coriander or mint. Tandoori Chicken has also become popular
+            outside India and is frequently included in world cuisines.</p>
+        <button class="modal-button" data-modal-target="modal-2">Recipe</button>
+        <div class="modal" id="modal-2">
+            <div class="modal-content">
+                <span class="close-button" data-close-button>&times;</span>
+                <h2>Materials:</h2>
+                <p id="mat">
+                    <p>4 chicken thighs or breast pieces</p>
+                    <p>1 cup of yoghurt</p>
+                    <p>2 tablespoons lemon juice</p>
+                    <p>3 cloves of garlic (crushed)</p>
+                    <p>1 tablespoon grated ginger</p>
+                    <p>1 tablespoon red pepper powder</p>
+                    <p>1 teaspoon of turmeric</p>
+                    <p>1 teaspoon cumin</p>
+                    <p>Make deep scratches on the chicken pieces.</p>
+                    
+                    <p>In a bowl, mix yoghurt, lemon juice, garlic, ginger, red pepper powder, turmeric, cumin and</p>
+                    <p>optionally salt.</p>
+                    <p>Spread the mixture on the chicken pieces and let them rest in the refrigerator for at least 2-3</p>
+                    <p>hours. Place the chickens on a baking tray lined with baking paper or on the grill.</p>
+                    <p>Bake the chicken in the preheated oven or on the grill for about 25-30 minutes. Cooking time</p>
+                    <p>may vary depending on the size of the chicken, make sure the chicken is cooked thoroughly.</p>
+                    <p>Place the cooked chicken on a serving plate and serve hot by garnishing it with fresh coriander</p>
+                    <p>or mint leaves.</p>
+            </div>
+        </div>
+    </div>
+
+
+<br>
+<div class="card">
+    <img src="images/gulabJamun.jpg" alt="Yemek 2">
+    <h2>Gulab Jamun</h2>
+    <p>In making Gulab Jamun, a dough is first prepared by kneading milk powder or chopped milk
+        pieces (khoya), flour and sugar. Small balls are made from this dough and then fried in hot oil
+        until golden brown. Gulab Jamun is a dessert that is often served on special occasions, festivals
+        or special celebrations and is loved in India as well as various other South Asian countries. This
+        dessert, which has a soft, sugary and slightly starchy texture, is usually served hot or cold..</p>
+    <button class="modal-button" data-modal-target="modal-3">Recipe</button>
+    <div class="modal" id="modal-3">
+        <div class="modal-content">
+            <span class="close-button" data-close-button>&times;</span>
+            <h2>Materials:</h2>
+            <p id="mat">
+                Mix milk powder or khoya, flour and baking powder in a bowl.
+                Slowly add milk and knead until you get a soft dough. It is important that it has an elastic
+                consistency.
+                Take small balls-shaped pieces from the dough and roll them. The edges of the balls should be
+                smooth, without cracks.
+                Heat oil in a deep pot or pan and fry the balls over medium heat until they turn golden.
+                Mix sugar and water in a separate pot, boil and stir until the sugar dissolves. Then add rose
+                water or rose petal essence.
+                Place the fried balls in the hot syrup and let them rest in the syrup for at least 1-2 hours,
+                preferably overnight.
+                When serving, strain the Gulab Jamuns soaked in syrup and serve hot or cold.
+                With this simple recipe, you can prepare delicious Gulab Jamun at home.
+        </div>
+    </div>
+</div>
+</div>
+    
+</div>
+
+<script>
+    
+    const modalButtons = document.querySelectorAll('.modal-button');
+    const closeButtons = document.querySelectorAll('[data-close-button]');
+    const modals = document.querySelectorAll('.modal');
+
+    modalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalTarget = button.dataset.modalTarget;
+            const modal = document.getElementById(modalTarget);
+            openModal(modal);
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            closeModal(modal);
+        });
+    });
+
+    modals.forEach(modal => {
+        modal.addEventListener('click', e => {
+            if (e.target === modal) {
+                closeModal(modal);
+            }
+        });
+    });
+
+    function openModal(modal) {
+        if (modal == null) return;
+        modal.style.display = 'flex';
+    }
+
+    function closeModal(modal) {
+        if (modal == null) return;
+        modal.style.display = 'none';
+    }
+</script>
+</body>
+</html>
